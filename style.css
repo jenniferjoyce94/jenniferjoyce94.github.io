@@ -165,6 +165,73 @@ em {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(166, 108, 91, 0.2);
 }
+.project-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+#experience,
+#education,
+#extras {
+  margin: 4vh 0;
+  padding: 2vh 0;
+}
+#experience h1,
+#education h1,
+#extras h1 {
+  font-size: 40px;
+  color: #5a3e36;
+}
+.job,
+.edu {
+  background: #fff;
+  border-left: 6px solid #a66c5b;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+.job h2,
+.edu h2 {
+  font-size: 24px;
+  color: #a66c5b;
+}
+.job h3,
+.edu h3 {
+  font-size: 18px;
+  color: #5a3e36;
+  margin-bottom: 10px;
+}
+.job ul,
+.edu ul,
+.merit-list {
+  padding-left: 20px;
+}
+.job li,
+.edu li,
+.merit-list li {
+  margin-bottom: 10px;
+}
+#extras ul {
+  background: #fff;
+  border-left: 6px solid #a66c5b;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  list-style-type: disc;
+}
+
+.job:hover,
+.edu:hover,
+#extras ul:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(166, 108, 91, 0.2);
+}
+
 .btn_one {
   color: #5a3e36;
   padding: 10px 40px;
