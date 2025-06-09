@@ -40,21 +40,21 @@ document.addEventListener("DOMContentLoaded", () => {
         "BookDucks är en webbapplikation jag har byggt från grunden där användare kan utforska böcker, spara titlar i en personlig “Att läsa”-lista och sätta betyg på böcker de har läst. När man är inloggad kan man hantera sina sparade böcker, ge betyg mellan 1 och 5, och sortera listan efter författare, titel eller eget betyg. Bakom kulisserna används Strapi som headless CMS – där jag har organiserat bokdata, användarprofiler och kopplingar mellan dem. För att skydda användarnas information har jag lagt in inloggning med JWT-autentisering. Frontend-delen är byggd med ren JavaScript, och all kommunikation med backend hanteras med Axios.",
 
       link: "https://github.com/jenniferjoyce94/BookDucks",
-      picture: "/img/BookDucks.png",
+      picture: "img/BookDucks.png",
     },
     {
       title: "Webbutik – Gränssnitt för användare och admin",
       description:
         "Som en del av ett team byggde jag en e-handelswebb där användare kan handla och admins hanterar produkter. Jag ansvarade för inloggningsflödet, att skapa konto, samt gränssnittet för startsidan. Jag byggde också återanvändbara komponenter och hämtade data med Axios. JWT användes för att skilja på användare och admin, och MongoDB var databasen i projektet.",
       link: "https://github.com/Ellen1997/2405_06_hakimLivs",
-      picture: "/img/hakimlivs.png",
+      picture: "img/HakimLivs.png",
     },
     {
       title: "Tamagotchi",
       description:
         "Ett roligt och nostalgiskt projekt där jag har byggt en Tamagotchi-liknande app. Användare kan mata, leka med och ta hand om sin virtuella Tamagotchi. Jag har implementerat funktioner för att hålla koll på hälsa, hunger och nöjdhet, samt en timer som påverkar Tamagotchins tillstånd över tid. Projektet är byggt med JavaScript och använder lokal lagring för att spara status mellan sessioner.",
       link: "https://github.com/jenniferjoyce94/tamagotchi",
-      picture: "/img/tamagotchi.png",
+      picture: "img/tamagotchi.png",
     },
   ];
 
