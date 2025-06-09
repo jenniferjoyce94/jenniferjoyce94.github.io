@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <p>
   Frontendutvecklare med en bakgrund inom samordning, administration och pedagogik – och ett stort intresse för teknik, UX och tillgänglighet.
 </p>
-<p><em>Jag studerar just nu frontendutveckling på Nackademin och söker en LIA-plats (Lärande i Arbete) mellan 8 december 2025 och 24 april 2026.</em></p>
+<p><em>Jag studerar just nu frontendutveckling på Nackademin och söker en LIA-plats (Lärande i Arbete): <br>8 december 2025 till 24 april 2026 </em></p>
     <button class="btn_one">Läs mer</button>
   `;
 
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.insertAdjacentHTML(
     "beforeend",
     `
-  <footer id="footer">
+  <footer class="footer" id="contact">
   <h1 id="footer-h1">Kontakt</h1>
     <p>Jennifer Joyce – Frontend Developer</p>
     <div class="footer-links">
