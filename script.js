@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("tagline").innerHTML = `
     <p>
-  Frontendutvecklare med bakgrund inom samordning, administration – med ett stort intresse för teknik, UX och tillgänglighet.
+  Frontendstudent med bakgrund inom samordning, administration – med ett stort intresse för teknik, UX och tillgänglighet.
 </p>
 <p><em>Jag studerar just nu frontendutveckling på Nackademin och söker en LIA-plats (Lärande i Arbete): <br>8 december 2025 till 24 april 2026 </em></p>
     <button class="btn_one" href="media/LIA-Kit.pdf">Läs om LIA (PDF)</button>
@@ -76,6 +76,24 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("portfolio").insertAdjacentHTML(
     "beforeend",
     `
+    <div id="education">
+      <h1>Utbildning</h1>
+  
+      <div class="edu">
+        <h2>Frontendutvecklare – Nackademin</h2>
+        <h3>Augusti 2024 – pågående</h3>
+      </div>
+  
+      <div class="edu">
+        <h2>Undersköterska – Röda Korsets Högskola</h2>
+        <h3>Examinerad 2017</h3>
+      </div>
+  
+      <div class="edu">
+        <h2>Naturvetenskap - Kunskapsgymnasiet Globen</h2>
+        <h3>Examinerad 2013</h3>
+      </div>
+    </div>
   <div id="experience">
     <h1>Erfarenhet</h1>
 
@@ -117,24 +135,6 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   </div>
 
-  <div id="education">
-    <h1>Utbildning</h1>
-
-    <div class="edu">
-      <h2>Frontendutvecklare – Nackademin</h2>
-      <h3>Augusti 2024 – pågående</h3>
-    </div>
-
-    <div class="edu">
-      <h2>Undersköterska – Röda Korsets Högskola</h2>
-      <h3>Examinerad 2017</h3>
-    </div>
-
-    <div class="edu">
-      <h2>Naturvetenskap - Kunskapsgymnasiet Globen</h2>
-      <h3>Examinerad 2013</h3>
-    </div>
-  </div>
 
   <div id="extras">
     <h1>Övrigt</h1>
