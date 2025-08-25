@@ -8,6 +8,7 @@ html {
   background: #f8f6f3;
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 #loading {
   width: 100vw;
@@ -163,15 +164,18 @@ em {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(166, 108, 91, 0.2);
 }
+.project-image-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .project-image {
-  width: 100%;
-  max-width: 500px;
+  max-width: 100%;
+  width: 500px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
 }
 #experience,
 #education,
@@ -260,6 +264,12 @@ p {
   color: #5a3e36;
 }
 
+.footer h1 {
+  font-size: 40px;
+  color: #5a3e36;
+  margin-bottom: 20px;
+}
+
 .footer-links {
   margin-top: 10px;
 }
@@ -301,5 +311,44 @@ p {
 
   #projects {
     width: 90%;
+  }
+
+  .footer {
+    padding: 6vh 5%;
+    width: 90%;
+  }
+
+  .footer-links a {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .footer h1 {
+    font-size: 28px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 4vh 2%;
+    width: 96%;
+  }
+
+  .footer h1 {
+    font-size: 24px;
+  }
+
+  .footer-links a {
+    margin: 0 8px;
+    font-size: 18px;
+  }
+
+  .footer p {
+    font-size: 12px;
   }
 }

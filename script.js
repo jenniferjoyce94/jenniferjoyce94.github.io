@@ -1,14 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
+  function getFilePath(filename) {
+    const path = window.location.pathname;
+    if (path.includes("/jenniferjoyce94.github.io/")) {
+      return `/jenniferjoyce94.github.io/media/${filename}`;
+    } else {
+      return `./media/${filename}`;
+    }
+  }
+
   setTimeout(() => {
     document.getElementById("loading").style.display = "none";
   }, 1500);
+
+  const liaPath = getFilePath("LIA-Kit.pdf");
 
   document.getElementById("tagline").innerHTML = `
     <p>
   Frontendstudent med bakgrund inom samordning, administration – med ett stort intresse för teknik, UX och tillgänglighet.
 </p>
 <p><em>Jag studerar just nu frontendutveckling på Nackademin och söker en LIA-plats (Lärande i Arbete): <br>8 december 2025 till 24 april 2026 </em></p>
-    <button class="btn_one" href="media/LIA-Kit.pdf">Läs om LIA (PDF)</button>
+    <a class="btn_one" href="${liaPath}" target="_blank">Läs om LIA (PDF)</a>
   `;
 
   document.getElementById("skills").innerHTML = `
@@ -32,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Ett smidigt verktyg för att hålla koll på vardagen, byggt med JavaScript och JSON Server. Du kan skapa ett konto, logga in och enkelt hålla reda på dina att-göra-listor, vanor och planerade aktiviteter. Allt sparas personligt så att du alltid har din egen översikt nära till hands.",
       link: "https://github.com/juhliagullbrand/Productivity-assistant-application",
-      picture: "media/productivityapp.png",
+      picture: getFilePath("ProductivityApp.png"),
     },
     {
       title: "BookDucks",
@@ -40,21 +51,21 @@ document.addEventListener("DOMContentLoaded", () => {
         "BookDucks är en webbapplikation jag har byggt från grunden där användare kan utforska böcker, spara titlar i en personlig “Att läsa”-lista och sätta betyg på böcker de har läst. När man är inloggad kan man hantera sina sparade böcker, ge betyg mellan 1 och 5, och sortera listan efter författare, titel eller eget betyg. Bakom kulisserna används Strapi som headless CMS – där jag har organiserat bokdata, användarprofiler och kopplingar mellan dem. För att skydda användarnas information har jag lagt in inloggning med JWT-autentisering. Frontend-delen är byggd med ren JavaScript, och all kommunikation med backend hanteras med Axios.",
 
       link: "https://github.com/jenniferjoyce94/BookDucks",
-      picture: "media/BookDucks.png",
+      picture: getFilePath("BookDucks.png"),
     },
     {
       title: "Webbutik – Gränssnitt för användare och admin",
       description:
         "Som en del av ett team byggde jag en e-handelswebb där användare kan handla och admins hanterar produkter. Jag ansvarade för inloggningsflödet, att skapa konto, samt gränssnittet för startsidan. Jag byggde också återanvändbara komponenter och hämtade data med Axios. JWT användes för att skilja på användare och admin, och MongoDB var databasen i projektet.",
       link: "https://github.com/Ellen1997/2405_06_hakimLivs",
-      picture: "media/HakimLivs.png",
+      picture: getFilePath("HakimLivs.png"),
     },
     {
       title: "Tamagotchi",
       description:
         "Ett roligt och nostalgiskt projekt där jag har byggt en Tamagotchi-liknande app. Användare kan mata, leka med och ta hand om sin virtuella Tamagotchi. Jag har implementerat funktioner för att hålla koll på hälsa, hunger och nöjdhet, samt en timer som påverkar Tamagotchins tillstånd över tid. Projektet är byggt med JavaScript och använder lokal lagring för att spara status mellan sessioner.",
       link: "https://github.com/jenniferjoyce94/tamagotchi",
-      picture: "media/tamagotchi.png",
+      picture: getFilePath("Tamagotchi.png"),
     },
   ];
 
@@ -67,8 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
     projectDiv.innerHTML = `
     <h2>${project.title}</h2>
     <p>${project.description}</p>
-    <img src="${project.picture}" alt="${project.title}" class="project-image" />
-      <a href="${project.link}" class="btn_one" target="_blank">Visa projekt</a>
+    <div class="project-image-wrapper">
+      <img src="${project.picture}" alt="${project.title}" class="project-image" />
+    </div>
+    <a href="${project.link}" class="btn_one" target="_blank">Visa projekt</a>
     `;
     workSection.appendChild(projectDiv);
   });
